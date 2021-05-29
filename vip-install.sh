@@ -104,7 +104,7 @@ echo ""
 echo ""
 
 #echo ""
-    ##wget -q -O /usr/bin/pass https://raw.githubusercontent.com/ovpn-web/installvpn/main/PassKey.txt
+    ##wget -q -O /usr/bin/pass https://raw.githubusercontent.com/teamvpn/install_vpn/master/PassKey.txt
 #if ! grep -w -q $passwds /usr/bin/pass; then
 #clear
 #echo ""
@@ -216,8 +216,8 @@ echo ""
 echo ""
 
 echo ""
-    read -p "กรุณาใส่รหัสผ่านเพื่อติดตั้ง: " passwds
-wget -q -O /usr/bin/pass https://raw.githubusercontent.com/ovpn-web/installvpn/main/PassKey.txt
+    read -p "กรุณาใส่รหัสผ่าน: " passwds
+wget -q -O /usr/bin/pass https://raw.githubusercontent.com/teamvpn/install_vpn/master/PassKey.txt
 if ! grep -w -q $passwds /usr/bin/pass; then
 clear
 echo ""
@@ -618,7 +618,7 @@ fi
 
 	wget -O /usr/local/bin/menu "https://github.com/ovpn-web/installvpn/tree/main/menu"
 	chmod +x /usr/local/bin/menu
-	wget -O /usr/local/bin/Auto-Delete-Client "https://raw.githubusercontent.com/MyGatherBk/PURE/master/Auto-Delete-Client"
+	wget -O /usr/local/bin/Auto-Delete-Client "https://raw.githubusercontent.com/teamvpn/install_vpn/list/master/Auto-Delete-Client"
 	chmod +x /usr/local/bin/Auto-Delete-Client 
 	apt-get -y install vnstat
 	cd /etc/openvpn/easy-rsa/
